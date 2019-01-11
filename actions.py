@@ -17,7 +17,7 @@ class ActionList():
         
         SUBJECT = Config.ICY_EMAIL_SUBJECT
         
-        BODY = MIMEText("The parking lost is icy this morning. Please be careful")
+        BODY = MIMEText("The parking lot is icy this morning. Please be careful")
         BODY['To'] = email.utils.formataddr((TO_NAME, TO))
         BODY['From'] = email.utils.formataddr((FROM_NAME, FROM))
         BODY['Subject'] = SUBJECT
