@@ -46,6 +46,8 @@ class WeatherScraper():
                     if snow_item in WEATHER_DICT:
                         ActionList.ice_email(ActionList)
                         exit(0)
+                    exit(0)
+            exit(0)
 
         
     def error_(self):

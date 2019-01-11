@@ -1,5 +1,5 @@
 class Config():
-    ZIP_CODE = "80303"
+    ZIP_CODE = ""
     COUNTRY_CODE = "us"
     API_KEY = ""
     API_URL = "https://api.openweathermap.org/data/2.5/weather"
