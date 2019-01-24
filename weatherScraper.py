@@ -37,17 +37,16 @@ class WeatherScraper():
                 ActionList.ice_email(ActionList)
                 exit(0)
 
-        
-        for rain_item in WeatherCodes.RAIN:
-            # Check to see if there's rain
-            if rain_item in WEATHER_DICT:
-                # Check to see if there's also snow
-                for snow_item in WeatherCodes.SNOW:
-                    if snow_item in WEATHER_DICT:
-                        ActionList.ice_email(ActionList)
-                        exit(0)
-                    exit(0)
-            exit(0)
+        for snow_item in WEATHER_DICT:
+            if snow_item in WeatherCodes.SNOW:
+                print("Matched {}".format(snow_item))
+                ActionList.ice_email(ActionList)
+                exit(0)
+            else:
+                print("No matches")
+                print("Weather Report: {}".format(self.JSON_RESPONSE))
+                exit(0)
+        exit(0)
 
         
     def error_(self):
